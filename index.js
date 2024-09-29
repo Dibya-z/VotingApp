@@ -97,7 +97,7 @@ app.post('/signup', async (req, res) => {
 
 
 
-app.post('/signup', async (req, res) => {
+app.post('/login', async (req, res) => {
     const { username, email, password } = req.body;
     if (!password || (!email && !username)) {
         res.status(400).send({ message: "all fields are required" });
