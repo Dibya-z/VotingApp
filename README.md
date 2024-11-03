@@ -2,6 +2,10 @@
 
 This is a backend application for a voting system where users can vote for candidates. It provides functionalities for user authentication, candidate management, and voting.
 
+## Motivation
+
+Voting is a fundamental part of any democratic system, and creating an efficient, secure, and accessible voting system is essential. This project explores building a RESTful API-based voting application with secure user authentication and authorization mechanisms, enabling users to vote while ensuring data integrity. The project also showcases backend CRUD operations, JWT handling, and database interactions.
+
 ## Features
 
 - User sign up and login with Aadhar Card Number and password
