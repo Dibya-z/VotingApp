@@ -30,6 +30,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
 2. Install dependencies:
 
+   ```bash
    npm install
 
 3. Configure environment variables
