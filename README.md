@@ -95,13 +95,14 @@ Voting is a fundamental part of any democratic system, and creating an efficient
    
    ```bash
    Header: Authorization (Bearer Token)
-   
+
    Responses:
    200 OK: Returns user profile.
    500 Internal Server Error
 
 ### Update Password
 - `PUT /user/profile/password`: Updates the authenticated user's password
+
    ```bash
    Request Body:
    {
@@ -118,6 +119,8 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
 ### Add Candidate (Admin Only)
 - `POST /candidate/`: Add a new candidate (Admin only)
+
+   ```bash
    Header: Authorization (Bearer Token)
    Request Body:
    {
@@ -134,6 +137,8 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
 ### Update Candidate (Admin Only)
 - `PUT /candidate/:candidateID`: Updates candidate information by ID (Admin only)
+
+   ```bash
    Header: Authorization (Bearer Token)
    Request Body:
    {
@@ -151,6 +156,8 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
 ### Delete Candidate (Admin Only)
 - `DELETE /candidate/:candidateID`: Delete a candidate by ID (Admin only)
+
+   ```bash
    Header: Authorization (Bearer Token)
 
    Responses:
@@ -164,6 +171,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 ### Get Vote Count
 - `GET /candidate/vote/count`: Gets the vote count for all candidates, sorted by votes
 
+   ```bash
    Responses:
    200 OK: List of candidates with vote count.
    500 Internal Server Error
@@ -171,6 +179,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 ### Vote for Candidate (User Only)
 - `POST /candidate/vote/:candidateID`: Vote for a candidate (User only)
 
+   ```bash
    Header: Authorization (Bearer Token)
 
    Responses:
@@ -183,6 +192,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 ### List Candidates
 - `GET /candidate/` : Gets a list of all candidates with name and party
 
+   ```bash
    Responses:
    200 OK: List of candidates.
    500 Internal Server Error
