@@ -92,16 +92,16 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
 ### Get Profile
 - `GET /user/profile`: Gets the authenticated user's profile
-
+   
    Header: Authorization (Bearer Token)
-
+   ```bash
    Responses:
    200 OK: Returns user profile.
    500 Internal Server Error
 
 ### Update Password
 - `PUT /user/profile/password`: Updates the authenticated user's password
-
+   ```bash
    Request Body:
    {
       "currentPassword": "string",
