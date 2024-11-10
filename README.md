@@ -44,6 +44,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
 4. Start the application:
 
+   ```bash
    npm start
 
 
@@ -55,6 +56,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 - `POST /user/signup`: Sign up a user
 
    Request Body:
+   ```bash
    {
       "name": "string",
       "age": "number",
@@ -67,6 +69,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
    }
 
    Responses:
+   ```bash
    200 OK: Returns user data and JWT token.
    400 Bad Request: Aadhaar validation error or admin already exists.
    500 Internal Server Error
