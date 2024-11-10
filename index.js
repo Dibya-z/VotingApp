@@ -14,7 +14,7 @@ const { default: mongoose } = require('mongoose');
 
 // Use the routers
 app.get("/", (req, res) => res.send("Welcome"))
-app.use('/user', userRoutes);
+app.use('/user', userRoutes); 
 app.use('/candidate', candidateRoutes);
 
 
@@ -26,6 +26,6 @@ mongoose
     .then(() => {
         console.log("App has started")
         app.listen(PORT, () => {
-            console.log('listening on port 3000');
+            console.log('listening on port 3001');
         })
     })
