@@ -55,7 +55,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 ### Sign Up
 - `POST /user/signup`: Sign up a user
 
-   Request Body:
+Request Body:
    ```bash
    {
       "name": "string",
@@ -68,8 +68,8 @@ Voting is a fundamental part of any democratic system, and creating an efficient
       "role": "voter or admin"
    }
 
-   Responses:
-   bash
+Responses:
+   
    Copy code
    200 OK: Returns user data and JWT token.
    400 Bad Request: Aadhaar validation error or admin already exists.
