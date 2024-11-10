@@ -37,6 +37,7 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 
    Create a .env file in the root directory and add the following variables:
 
+   ```bash
    PORT=3000
    MONGODB_URL_LOCAL=<your-mongodb-url>
    JWT_SECRET=<your-jwt-secret>  
