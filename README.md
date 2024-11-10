@@ -55,9 +55,9 @@ Voting is a fundamental part of any democratic system, and creating an efficient
 ### Sign Up
 - `POST /user/signup`: Sign up a user
 
-Request Body:
-      ```bash
-      {
+   Request Body:
+   ```bash
+   {
       "name": "string",
       "age": "number",
       "mobile": "string",
@@ -66,7 +66,7 @@ Request Body:
       "aadharCardNumber": "number",
       "password": "string",
       "role": "voter or admin"
-      }
+   }
 
 Responses:
    
